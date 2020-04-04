@@ -11,7 +11,7 @@ def summon_captain_planet(collection)
 end
 
 def long_planeteer_calls(collection)
-  collection.all? do |word|
+  collection.any? do |word|
     word.size>4
   end
 end
